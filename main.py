@@ -22,7 +22,7 @@ def main():
             print('ERROR. Cannot be a folder')
             continue
         if not os.path.isdir(os.path.split(filepath)[0] or './'):
-            print('ERROR. Folder not exist')
+            print('ERROR. Folder does not exist')
             continue
 
         extension = os.path.splitext(filepath)[1]
@@ -62,6 +62,8 @@ def main():
     else:
         bar.close()
         print('\nDownload completed')
+
+    # input('\nPress enter to close...')
 
 
 if __name__ == '__main__':
