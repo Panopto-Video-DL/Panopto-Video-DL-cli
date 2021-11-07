@@ -30,17 +30,15 @@ def main():
             filepath += SUPPORTED_FORMATS[0] if filepath[-1] != '.' else SUPPORTED_FORMATS[0][1:]
 
         if os.path.exists(filepath):
-            print('\nFile already exist')
+            print('File already exist')
             result = utils.input_yesno('Replace it [Y, n]? ')
             if result:
                 os.remove(filepath)
             else:
                 continue
         if os.path.splitext(filepath)[1] not in SUPPORTED_FORMATS:
-            print('\nExtension not officially supported. Choose from: ' + str(SUPPORTED_FORMATS))
-            result = utils.input_yesno('Continue anyway [Y, n]? ')
-            if not result:
-                continue
+            print('Extension not officially supported. Choose from: ' + str(SUPPORTED_FORMATS))
+            continue
         break
 
     print(f'\nDownload started: {filepath}\n')
