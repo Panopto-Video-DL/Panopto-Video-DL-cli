@@ -1,5 +1,7 @@
 # Panopto-Video-DL
 
+> ⚠ Moved to [Panopto-Video-DL-lib](https://github.com/Panopto-Video-DL/Panopto-Video-DL-lib)
+
 Download video from Panopto!  
 
 ## Prerequisites  
@@ -18,16 +20,16 @@ Download the latest release: [Panopto-Video-DL](https://github.com/Panopto-Video
 ### Advanced
 
 1. Clone this repository  
-```bach
-> git clone https://github.com/Panopto-Video-DL/Panopto-Video-DL-cli.git
+```shell
+git clone https://github.com/Panopto-Video-DL/Panopto-Video-DL-cli.git
 ```
 2. Enter the folder  
-```bach
-> cd Panopto-Video-DL-cli
+```shell
+cd Panopto-Video-DL-cli
 ```
  3. Install the requirements  
-```bach
-> pip install -r requirements.txt
+```shell
+pip install -r requirements.txt
 ```
 
 ## Usage  
